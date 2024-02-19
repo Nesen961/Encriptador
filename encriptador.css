@@ -1,0 +1,16 @@
+label {
+    font-size: 1.2em;
+    color: blueviolet;
+    margin: 10px auto;
+    padding:5px;
+}
+
+input {
+    margin:15px auto;
+    padding:15px;
+}
+
+#resultado {
+    background-color: white;
+    border-style: none;
+}
