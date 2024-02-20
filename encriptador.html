@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="expReg.js"></script>
+    <link rel="stylesheet"  href="reset.css">
     <link rel="stylesheet" href="encriptador.css">
     <title>Expresiones Regulares</title>
 </head>
 <body>
-    <header>
-        <img src="Imagenes/Logo-1.png" alt="Logo" width="100px">
-        <h1>Esto es para pushear en Github</h1>
-    </header>
-    <main>
-        <form>
+    <div id="layout">
+        <header>
+        <img id="logo" src="Imagenes/Logo-1.png" alt="Logo" width="100px">
+    
+        </header>
+        <main>
+            <div id="rectangle1">
+            </div>
+            <input type="text" id="textoingresado">
+            <form>
             <label for="expresion">Ingrese texto a verificar<br></label>
             <input type="text" id="expresion"><br>
             <input type="button" onclick="encriptarDatos()" value="ENCRIPTAR"><br>
@@ -23,10 +28,12 @@
             <label for="encriptar">Resultado:</label><br>
             <input type="text" id="encriptar" size="50"><br>
            
-        </form>
-    </main>
-    <footer>
+            </form>
+            */
+        </main>
+        <footer>
 
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>
