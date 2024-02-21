@@ -4,16 +4,25 @@
     width: 1440px;
     height: 1024px;
     top: 622px;
+    margin:15px;
     left: -2277px;
     background-color:#F3F5FC; 
 
 }
+#contenedor{
+    display:flex;
+    width: 90%;
+    height: 900px;
+    background-color: aquamarine;
+}
+
+#entrada{
+    flex:75%;
+}
 
 #rectangle1{
-    width: 400px;
-    height: 944px;
-    margin-top: 10px;
-    margin-left: 1000px;
+    flex: 25%;
+    margin:20px;
     border-radius: 32px;
     background: #FFFFFF;
     box-shadow: 0px 24px 32px -8px #00000014;  
