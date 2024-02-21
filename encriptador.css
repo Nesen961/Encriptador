@@ -50,7 +50,10 @@
     
 }
 
-
+.botones{
+    background-color: bisque;
+    margin:300px auto;
+}
 
 
 label {
