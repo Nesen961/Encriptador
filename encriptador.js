@@ -1,5 +1,5 @@
 function verificarDatos(){
-    let prueba = document.getElementById("expresion").value;
+    let prueba = document.getElementById("textoingresado").value;
     let caracteresValidos =/[^a-z .,:;?¡!0-9]/;
     let aviso = document.getElementById("resultado");
    
@@ -27,7 +27,9 @@ function encriptarDatos(){
         prueba=prueba.replace(/o/g,"ober");
         prueba=prueba.replace(/u/g,"ufat");
         console.log(prueba);
-        texto.value=prueba;*/
+        texto.value=prueba;
+        
+        Por lo tanto se efectúa lo siguiente con el metodo substring*/
     for (let i = 0; i < prueba.length; i++) {
         switch (prueba.substring(i,i+1)) {
             case "a":

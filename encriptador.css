@@ -18,6 +18,7 @@
 
 #entrada{
     flex:75%;
+    margin:20px auto
 }
 
 #rectangle1{
@@ -51,24 +52,21 @@
 }
 
 .botones{
+    display: flex;
     background-color: bisque;
     margin:300px auto;
+    padding: 2px;
+    height: 80px;
+
+}
+
+button {
+    flex:auto;
+    margin: 20px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 5px;
 }
 
 
-label {
-    font-size: 1.2em;
-    color: blueviolet;
-    margin: 10px auto;
-    padding:5px;
-}
-
-input {
-    margin:15px auto;
-    padding:15px;
-}
-
-#resultado {
-    background-color: white;
-    border-style: none;
-}
