@@ -1,7 +1,7 @@
 
 #layout {
     
-    width: 1440px;
+    width: 100%;
     height: 1024px;
     top: 622px;
     margin:15px;
@@ -14,54 +14,76 @@
     width: 90%;
     height: 900px;
     background-color: aquamarine;
+    padding: 20px;
 }
 
 #entrada{
-    flex:75%;
-    margin:20px auto
+
+    flex: 1;
+    margin:40px;
+    background-color:burlywood;
+
 }
 
-#rectangle1{
-    flex: 25%;
-    margin:20px;
+#salida{
+    
+    width: 250px;
+    /*flex: 1;*/
+    margin:40px;
     border-radius: 32px;
     background: #FFFFFF;
-    box-shadow: 0px 24px 32px -8px #00000014;  
+    box-shadow: 0px 24px 32px -8px #00000014; 
+    padding: 10px; 
 }
 
-#textoingresado{
-    width: 577px;
+#resultado{
+    margin:100px auto;
+    height:30px;
+    padding: 20px; 
+    width: 200px;
+}
+
+
+#muñeco{
+    width: 200px;
+    margin: 60px auto;
+    padding: 20px; 
+}
+
+#mensaje1{
+    margin: 60px auto;
+    height: 30px;
+    padding: 20px; 
+    width: 200px;
+}
+
+#textoingresado {
+    display:block;
+    /*width: 577px;*/
     height: 48px;
-    margin-top: 168px;
-    margin-left: 240px;
+    margin: 168px auto;
+    /*margin-left: 240px;*/
     font-family: Inter;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 400;
     line-height: 48px;
     letter-spacing: 0em;
     text-align: left;
     border:1px solid #0A3871;
 }
-#logo{
-    width: Fixed (120px);
-    height: Fixed (48px);
-    margin-top: 40px;
-    margin-left: 40px;
-    gap: 40px;
-    
-}
+
 
 .botones{
     display: flex;
     background-color: bisque;
     margin:300px auto;
-    padding: 2px;
+    padding: 20px;
     height: 80px;
 
 }
 
 button {
-    flex:auto;
+    flex: 1;
     margin: 20px;
     height: 40px;
     padding: 10px;

@@ -1,7 +1,7 @@
 function verificarDatos(){
     let prueba = document.getElementById("textoingresado").value;
     let caracteresValidos =/[^a-z .,:;?¡!0-9]/;
-    let aviso = document.getElementById("resultado");
+    let aviso = document.getElementById("mensaje1");
    
     let bandera = caracteresValidos.test(prueba);
     if (bandera) {
@@ -17,7 +17,7 @@ function verificarDatos(){
 
 function encriptarDatos(){
     let prueba = verificarDatos();
-    let texto=document.getElementById("encriptar");
+    let texto=document.getElementById("resultado");
     let aux="";
     /*Lo que sigue no es válido pues encripta lo encriptado, ej al reemplazar
      la a por ai luego se reemplaza esa i por imes y no sirve
@@ -28,7 +28,6 @@ function encriptarDatos(){
         prueba=prueba.replace(/u/g,"ufat");
         console.log(prueba);
         texto.value=prueba;
-        
         Por lo tanto se efectúa lo siguiente con el metodo substring*/
     for (let i = 0; i < prueba.length; i++) {
         switch (prueba.substring(i,i+1)) {
@@ -59,7 +58,7 @@ function encriptarDatos(){
 
 function desencriptarDatos(){
     let prueba = verificarDatos();
-    let texto=document.getElementById("encriptar");
+    let texto=document.getElementById("resultado");
         
         prueba=prueba.replace(/ai/g,"a");
         prueba=prueba.replace(/enter/g,"e");

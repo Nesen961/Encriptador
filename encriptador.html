@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="expReg.js"></script>
+    <script src="encriptador.js"></script>
     <link rel="stylesheet"  href="reset.css">
     <link rel="stylesheet" href="encriptador.css">
+
     <title>Expresiones Regulares</title>
 </head>
 <body>
@@ -13,19 +14,25 @@
         <header>
             <img id="logo" src="Imagenes/Logo-1.png" alt="Logo"> 
         </header>
-        <main>
-            <div id="contenedor">
+        <main id="contenedor">
+            
                 <div id="entrada">
                     <input type="text" id="textoingresado" placeholder="Ingrese aquí los datos">
-                    <div class="botones">
-                    <button id="Encriptar">Encriptar</button>
-                    <button id="Desencripta">Desencriptar</button>
-                    </div>
+                        <div class="botones">
+                            
+                            <button id="Encriptar" onclick=encriptarDatos()>Encriptar</button>
+                            <button id="Desencripta" onclick=desencriptarDatos()>Desencriptar</button>
+                            
+                        </div>
                 </div>
-                <div id="rectangle1">
+
+                <div id="salida">
+                    <input type="text" id="resultado">
+                    <img src="Imagenes/Muñeco.png" id="muñeco">
+                    <input type="text" id="mensaje1">
                 </div>
                 
-            </div>
+            
             <!--
             
             <input type="text" id="expresion"><br>
