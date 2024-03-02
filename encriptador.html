@@ -7,48 +7,38 @@
     <link rel="stylesheet"  href="reset.css">
     <link rel="stylesheet" href="encriptador.css">
 
-    <title>Expresiones Regulares</title>
+    <title>Encriptador</title>
 </head>
 <body>
-    <div id="layout">
-        <header>
-            <img id="logo" src="Imagenes/Logo-1.png" alt="Logo"> 
-        </header>
         <main id="contenedor">
-            
-                <div id="entrada">
-                    <input type="text" id="textoingresado" placeholder="Ingrese aquí los datos">
-                        <div class="botones">
-                            
+                <img id="logo" src="Imagenes/Logo-1.png" alt="Logo">     
+                <section class="entrada">
+                    <div class="frase-a-encriptar">
+                        <input type="text"  id="textoingresado" placeholder="Ingrese el texto">
+                    </div>
+                    <div class="caracteres-permitidos">
+                        <img src="Imagenes/bi_exclamation-circle-fill-1.png" id="admiracion"> 
+                        <input type="text" id="mensaje1">
+                    </div>
+                  
+                    <div class="botones">   
                             <button id="Encriptar" onclick=encriptarDatos()>Encriptar</button>
-                            <button id="Desencripta" onclick=desencriptarDatos()>Desencriptar</button>
-                            
-                        </div>
-                </div>
+                            <button id="Desencripta" onclick=desencriptarDatos()>Desencriptar</button>      
+                    </div>
+                </section>
 
-                <div id="salida">
+                <section class="salida">
                     <input type="text" id="resultado">
                     <img src="Imagenes/Muñeco.png" id="muñeco">
-                    <input type="text" id="mensaje1">
-                </div>
+                   
+                </section>
                 
             
-            <!--
             
-            <input type="text" id="expresion"><br>
-            <input type="button" onclick="encriptarDatos()" value="ENCRIPTAR"><br>
-            <input type="button" onclick="desencriptarDatos()" value="DESENCRIPTAR"><br>
-            <label for="resultado">El dato es:</label><br>
-            <input type="text" id="resultado" size="80"><br>
-            <label for="encriptar">Resultado:</label><br>
-            <input type="text" id="encriptar" size="50"><br>
-            </form>
-            
-            -->
         </main>
         <footer>
 
         </footer>
-    </div>
+
 </body>
 </html>
