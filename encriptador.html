@@ -16,6 +16,7 @@
                     <div class="frase-a-encriptar">
                         <input type="text"  id="textoingresado" placeholder="Ingrese el texto">
                     </div>
+
                     <div class="caracteres-permitidos">
                         <img src="Imagenes/bi_exclamation-circle-fill-1.png" id="admiracion"> 
                         <input type="text" id="mensaje1">
@@ -28,9 +29,15 @@
                 </section>
 
                 <section class="salida">
-                    <input type="text" id="resultado">
-                    <img src="Imagenes/Muñeco.png" id="muñeco">
-                   
+                    <textarea id="texto-en-desen-criptado" cols="17" row="4"></textarea>
+                    <div class="muñeco">
+                        <img src="Imagenes/Muñeco.png" id="muñeco">
+                    </div>
+                    <p id="parrafo1">Ningún mensaje fue encontrado</p>
+                    <p id="parrafo2">Ingresa el texto que desees encriptar o desencriptar</p> 
+                    <div class="boton-salida">
+                    <button id="Copiar" onclick=copiarDatos()>Copiar</button> 
+                    </div>
                 </section>
                 
             

@@ -3,7 +3,6 @@ function verificarDatos(){
     prueba.value="";
     let caracteresValidos =/[^a-z .,:;?¡!0-9]/;
     let aviso = document.getElementById("mensaje1");
-   
     let bandera = caracteresValidos.test(prueba);
     if (bandera) {
         console.log(bandera);
@@ -12,6 +11,10 @@ function verificarDatos(){
        
     }else{
        document.getElementById("admiracion").style.visibility = "hidden";
+       document.getElementById("muñeco").style.visibility="hidden";
+       document.getElementById("parrafo1").style.visibility="hidden";
+       document.getElementById("parrafo2").style.visibility="hidden";
+       document.getElementById("Copiar").style.visibility="visible";
        aviso.value=""; 
        return prueba; 
        
@@ -20,7 +23,7 @@ function verificarDatos(){
 
 function encriptarDatos(){
     let prueba = verificarDatos();
-    let texto=document.getElementById("resultado");
+    let texto=document.getElementById("texto-en-desen-criptado");
     let aux="";
    
     for (let i = 0; i < prueba.length; i++) {
@@ -62,4 +65,8 @@ function desencriptarDatos(){
         console.log(prueba);
         texto.value=prueba;
         
+}
+
+function copiarDatos(){
+
 }
