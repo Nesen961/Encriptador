@@ -16,7 +16,7 @@
 }
 
 .entrada{
-    flex: 3;
+    flex: 4;
     margin:60px 20px 20px 20px;
     background-color: #696a6f;
 
@@ -93,19 +93,21 @@ background-color:#0A3871;
 }
 
 #texto-en-desen-criptado{
-    
-    margin:80px auto;
+    flex: 1;
+    margin:0px auto;
     margin-bottom: 0px;
-    height:30px;
+    height:200px;
     padding: 20px; 
-    width: 200px;
     font-size: 1.5em;
     text-align: center;
-    border:none
+    border:none;
+    resize: none;
+    border: none;
+    
 }
 
 .muñeco{
-    
+    flex:1;/**/
     width: 80%;
     margin: 10px auto;
     text-align: center;

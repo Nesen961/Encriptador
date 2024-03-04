@@ -55,18 +55,18 @@ function encriptarDatos(){
 
 function desencriptarDatos(){
     let prueba = verificarDatos();
-    let texto=document.getElementById("resultado");
-        
+    let texto=document.getElementById("texto-en-desen-criptado");
         prueba=prueba.replace(/ai/g,"a");
         prueba=prueba.replace(/enter/g,"e");
         prueba=prueba.replace(/imes/g,"i");
         prueba=prueba.replace(/ober/g,"o");
         prueba=prueba.replace(/ufat/g,"u");
-        console.log(prueba);
-        texto.value=prueba;
-        
+        texto.value=prueba;    
 }
 
-function copiarDatos(){
 
-}
+
+    const copiarDatos = async () => {
+      let texto = document.getElementById("texto-en-desen-criptado").value; 
+      await navigator.clipboard.writeText(texto);  
+    }
