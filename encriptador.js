@@ -64,8 +64,6 @@ function desencriptarDatos(){
         texto.value=prueba;    
 }
 
-
-
     const copiarDatos = async () => {
       let texto = document.getElementById("texto-en-desen-criptado").value; 
       await navigator.clipboard.writeText(texto);  
