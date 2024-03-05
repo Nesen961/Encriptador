@@ -1,8 +1,6 @@
 function verificarDatos(){
     let prueba = document.getElementById("textoingresado").value;
-    prueba.value="";
     let caracteresValidos =/[^a-z .,:;?¡!0-9]/;
-    let aviso = document.getElementById("mensaje1");
     let bandera = caracteresValidos.test(prueba);
     if (bandera) {
         console.log(bandera);
@@ -15,7 +13,6 @@ function verificarDatos(){
        document.getElementById("parrafo1").style.visibility="hidden";
        document.getElementById("parrafo2").style.visibility="hidden";
        document.getElementById("Copiar").style.visibility="visible";
-       aviso.value=""; 
        return prueba; 
        
     }
